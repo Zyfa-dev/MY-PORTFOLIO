@@ -1,0 +1,369 @@
+body{
+    background-color: rgb(5, 5, 5);
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0%;
+    padding: 0%;
+    background-image: url(bg.jpg);
+/* background-blend-mode: hard-light; */
+}
+.main{
+    background-color: rgba(0, 0, 0, 0.97);
+    height: 100%;
+    padding-top: 120px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 120px;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    position: fixed;
+    z-index: 2;
+}
+.nav-name{
+    display: flex;
+    align-items: center;
+}
+.nav-left-menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+h2{
+    font-family: sans-serif;
+    padding: 20px;
+    font-weight: bold;
+    text-shadow: 0px 1px 5px black, 0px -1px 5px black;
+    /* border: 1px solid black; */
+    /* border-radius: 10px; */
+    /* background-color: rgb(93, 89, 89); */
+}
+h2:hover{
+    background: linear-gradient(to bottom, #695ca6, #7f51ff);
+    border: 1px solid black;
+    border-radius: 160px 60px 160px 60px;
+    transition: transform  0.6s ease-in-out;
+    transform: translateY(15px);
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+    text-shadow: 0px 0px 0px black;
+    box-shadow: 5px 1px 5px rgb(0, 0, 0),inset -2px -1px 5px rgb(94, 94, 94);
+}
+.nav-right-menu{
+    display: flex;
+    align-items: center;
+}
+h1{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* margin-bottom: 20px; */;
+    color: rgb(121, 78, 206);
+    text-shadow: 0px 1px 5px black, -0px -1px 5px rgb(0, 0, 0);
+}
+.myself{
+    display: flex;
+    justify-content: space-around;
+    /* background: linear-gradient(to right, #A594F9, #6247AA); */
+    /* background: linear-gradient(to top, #000000, #202020); */
+    margin-top: 150px;
+}
+.img-1{
+    height: 300px;
+    width: 300px;
+    /* background-color: #7f51ff; */
+    background: linear-gradient(to right, #60549e, #9e32d7);
+    align-content: center;
+    border-radius: 50%; 
+    margin-top: 40px;
+    transition: 0.4s ease-in-out;
+
+}
+.img-one{
+    transition: 0.4s ease-in-out;
+    
+}
+.img-1:hover{
+    /* transition: 0.4s ease-out; */
+    border-radius: 220px 100px 220px 100px;
+    /* height: 320px;
+    width: 320px; */
+    background: linear-gradient(to bottom, #275770, #1774b1);
+    cursor: pointer;
+}
+.img-one:hover{
+    /* height: 300px !important;
+    width: 300px !important; */
+    padding: 0px 10px !important;
+    transition: ease-in-out 0.4s;
+    border-radius: 220px 100px 220px 100px !important;
+}
+.topic{
+    width: 50%;
+}
+h3{
+    color: white;
+    padding-top: 10px;
+    font-size: 25px;
+    /* width: 60%; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.butt button{
+    height: 80px;
+    width: 200px;
+    background: linear-gradient(to bottom, #695ca6, #7f51ff);
+    color: black;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    margin: 60px 44% 20px 44%; 
+    /* padding: 20px; */
+    transition: 0.07s ease;
+    cursor: pointer;
+}
+.butt button:hover{
+    background: linear-gradient(to bottom, #275770, #1774b1);
+    border-radius: 550px 240px 520px 240px;
+    height: 90px;
+    width: 220px;
+    margin: 55px 42% 15px 42%;
+}
+h4{
+    font-family: sans-serif;
+    font-size: 20px;
+    color: white;
+}
+.cards{
+    width: 100%;
+    height: 550px;
+}
+.fav-show{
+    margin: 10px 5%;
+    width: 90%;
+    display: flex;
+    height: 400px;
+}
+.show{
+  width: 20%;
+  gap: 5px;
+  height: 400px;
+color: black;
+background-color: white;
+margin-left: 10px;
+transition: 0.6s ease-in-out;
+display: flex;
+flex: 1;
+border: 1px solid white;
+border-radius: 10px;
+}
+.show:hover{
+    flex: 3;
+}
+.show img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+
+
+a{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+.btn-60 {
+    margin: 100px 35%;
+      box-sizing: border-box;
+      display: block;
+      padding: 1.5rem 4rem;
+      position: relative;
+      z-index: 0;
+      cursor: pointer;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+          Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+      font-size: 100%;
+      line-height: 1.5;
+    background: linear-gradient(to bottom, #695ca6, #7f51ff);
+      color: #fff;
+      border-radius: 999px;
+      border: 2px solid white;
+      overflow: hidden;
+      text-align: center;
+      transition: color 0.3s, background-color 0.3s;
+  }
+
+  .btn-60:hover {
+      color: black;
+    background: linear-gradient(to bottom, #275770, #1774b1);
+    -webkit-animation: jello 0.8s infinite;
+    border: 2px solid white;
+}
+
+
+  @-webkit-keyframes jello {
+      0%,
+      11.1%,
+      to {
+          transform: translateZ(0);
+      }
+      22.2% {
+          transform: skewX(-12.5deg) skewY(-12.5deg);
+      }
+      33.3% {
+          transform: skewX(6.25deg) skewY(6.25deg);
+      }
+      44.4% {
+          transform: skewX(-3.125deg) skewY(-3.125deg);
+      }
+      55.5% {
+          transform: skewX(1.5625deg) skewY(1.5625deg);
+      }
+      66.6% {
+          transform: skewX(-0.78125deg) skewY(-0.78125deg);
+      }
+      77.7% {
+          transform: skewX(0.390625deg) skewY(0.390625deg);
+      }
+      88.8% {
+          transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+      }
+  }
+
+  @keyframes jello {
+      0%,
+      11.1%,
+      to {
+          transform: translateZ(0);
+      }
+      22.2% {
+          transform: skewX(-12.5deg) skewY(-12.5deg);
+      }
+      33.3% {
+          transform: skewX(6.25deg) skewY(6.25deg);
+      }
+      44.4% {
+          transform: skewX(-3.125deg) skewY(-3.125deg);
+      }
+      55.5% {
+          transform: skewX(1.5625deg) skewY(1.5625deg);
+      }
+      66.6% {
+          transform: skewX(-0.78125deg) skewY(-0.78125deg);
+      }
+      77.7% {
+          transform: skewX(0.390625deg) skewY(0.390625deg);
+      }
+      88.8% {
+          transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+      }
+  }
+
+.d3cards{
+    margin: 10px 20px 30px 20px;
+}
+.full-card{
+ perspective: 1000px;
+}
+.card-content{
+    height: 400px;
+    width: 250px;
+    margin: 20px 30% 60px 41.5%;
+    border: 2px solid white;
+    position: relative;
+    border-radius: 20px;
+    transition: transform 1s ease;
+ cursor: pointer;
+ transform-style: preserve-3d;
+}
+.card-front{
+    z-index: 1;
+    transform: rotateY(0deg);
+}
+.img-front,.img-back{
+    height: 400px;
+    width: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+
+}
+.card-front, .card-back {
+    position: absolute;
+    width: 250px;
+    height: 400px;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    background: linear-gradient(to right, #332d4f, #452e86);
+}
+/* .card-front{
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid white;
+} */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Black overlay with 60% opacity */
+    border-radius: 20px; /* Match the card's border radius */
+}
+.text-front{
+    position: absolute;
+    left: 5px;
+    top: 0px;
+    color: white;
+    font-size: 50px;
+    text-shadow: 1px 1px 5px black;
+}
+.text-up{
+    position: absolute;
+    left: 10px;
+    top: 100px;
+    color: white;
+    font-size: 20px;
+    width: 80%;
+
+}
+.text-down{
+    position: absolute;
+    left: 10px;
+    top: 280px;
+    color: white;
+    font-size: 15px;
+    width: 50%;
+    /* background-color: #9e32d7; */
+    margin: 20px 28px;
+    background: linear-gradient(to right, #2a6484, #1774b1);
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 15px;
+}
+.card-back{
+    transform: rotateY(180deg);
+    height: 100%;
+    width: 100%;
+}
+
+.card-content:hover {
+    transform: rotateY(180deg);
+}
+

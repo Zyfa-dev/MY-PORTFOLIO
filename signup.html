@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <title>SIGN UP </title>
+    <style>
+        body{
+            background-image: url(web-1.jpg);
+            height: 930px;
+        }
+        .MAIN-2{
+            background-color: rgba(0,0,0,0.7);
+            /* height: 100%; */
+            /* padding-top: 120px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="MAIN-2">
+    <nav>
+        <div class="navbar">
+            <div class="nav-left-menu">
+                <h2 style="margin-right: 60px;"><a href="main.html">HOME</a></h2>
+                <!-- <h2>ABOUT ME</h2> -->
+            </div>
+            <div class="nav-name">
+                <h1>M HUZAIFA</h1>
+            </div>
+            <div class="nav-right-menu">
+                <h2>CONTACT US</h2>
+            </div>
+        </div>
+    </nav>
+
+    <form>
+        <div class="name"><h1 style="margin: 0px 40% 10px 46%;">SIGN UP</h1></div>
+        <div class="formcreate">
+            <div class="parent-1">
+                <div class="child-1">
+                    <LABEL for="name">FULL NAME</LABEL><br>
+                    <input type="text" id="name" placeholder="ENTER YOUR FULL-NAME" spellcheck="true" required><br><br>
+                </div>
+                <div class="child-2">
+                  <label for="username">USERNAME</label><br>
+                  <input type="text" id="username" placeholder="ENTER USERNAME" required><br><br>
+                </div>
+            </div>
+        <div class="parent-1">
+            <div class="child-1">
+             <label for="email">EMAIL</label><br>
+             <input type="email" id="email" placeholder="ENTER YOUR EMAIL" required><br><br>
+           </div>
+           <div class="child-2">
+             <label for="pass">PASSWORD</label><br>
+             <input type="password" id="password" placeholder="ENTER PASSWORD" required><br><br>
+           </div>
+        </div>
+        <div class="parent-1">
+            <div class="child-1">
+             <label for="No">NUMBER</label><br>
+             <input type="number" id="No" placeholder="ENTER YOUR NUMBER"><br><br>
+            </div>
+            <div class="child-2">            
+             <label for="age">AGE</label><br>
+            <input type="number" id="age" placeholder="ENTER YOUR AGE"><br><br>
+           </div>
+        </div>
+            <label for="coun" class="coun">COUNTRY</label><br>
+            <select>
+                <option select="selected">PAKISTAN</option>
+                <option>PALISTINE</option>
+                <option>SAUDIA ARABIA</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>RUSSIA</option>
+                <option>INDIA</option>
+            </select><br><br>
+            <input type="checkbox" id="check" class="check" required >
+            <label for="check" class="check">I ACCEPT TO ALL THE TERM OF SERVICES AND PRIVACY POLICIES.</label><br><br>
+          <center>  <button class="sign-up">SIGN UP</button></center>
+        </div>
+    </form>
+    
+    <style>
+        form {
+            padding: 150px 10% 50px 10%;
+        }
+        .formcreate {
+            position: relative; /* Position context for overlay */
+            background-image: url('bg.2.jpg'); /* Path to your background image */
+            background-size: cover;
+            background-position: center;
+            width: 80%;
+            height: 620px;
+            color: white;
+            border: 3px solid white;
+            margin: 10px 10%;
+            padding: 20px;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 25px;
+            border-radius: 20px;
+            box-shadow: 1px 1px 10px rgb(215, 215, 215);
+        }
+    
+        .formcreate::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8); /* Semi-transparent black overlay */
+            z-index: 1; /* Overlay above background image but below content */
+            border-radius: 20px;
+            pointer-events: none; /* Allow interactions with underlying content */
+        }
+    
+        input {
+            width: 300px;
+            height: 40px;
+            border-radius: 10px;
+            z-index: 1;
+        }
+    
+        .parent-1 {
+            display: flex;
+            z-index: 1;
+        }
+    
+        .child-1, .child-2 {
+            width: 50%;
+            margin: 10px 150px 10px 20px;
+            z-index: 1;
+        }
+
+        .coun{
+            margin-left: 20px;
+            z-index: 1;
+            position: relative;
+        }
+        select {
+            z-index: 2;
+            margin-left: 20px;
+            height: 40px;
+            width: 300px;
+            border-radius: 10px;
+            font-family: sans-serif;
+            position: relative;
+        }
+        option{
+            z-index: 1;
+            position: relative;
+        }
+
+        #check{
+            margin: 0%;
+            width: 50px;
+            height: 30px;
+        position: relative;
+        z-index: 1;
+    }
+    .check{
+        width: 10px;
+        height: 10px;
+        margin: 0px; 
+        z-index: 1;
+        position: relative;
+    }
+        .sign-up {
+            height: 80px;
+            width: 150px;
+            background: linear-gradient(to right, #ad23ad, #094ebf);
+            /* background: linear-gradient(to bottom, #695ca6, #7f51ff); */
+            color: black;
+            border: 2px solid black;
+            border-radius: 10px;
+            z-index: 1;
+            transition: 0.5s ease;
+        position: relative;
+        }
+    
+        .sign-up:hover {
+            background: linear-gradient(to bottom, #275770, #1774b1);
+            color: black;
+            border-radius: 60px;
+            position: relative;
+            width: 200px;
+            height: 50px;
+            color: white;
+            z-index: 1;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+    
+
+    
+</body>
+</html>
