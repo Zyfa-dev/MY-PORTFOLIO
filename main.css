@@ -107,6 +107,9 @@ h1{
 .topic{
     width: 50%;
 }
+.color-span,#text{
+    color: rgb(121, 78, 206);
+}
 h3{
     color: white;
     padding-top: 10px;
@@ -277,21 +280,22 @@ a:hover{
   }
 
 .d3cards{
-    margin: 10px 20px 30px 20px;
+    /* margin: 10px 20px 30px 20px; */
 }
 .full-card{
  perspective: 1000px;
 }
 .card-content{
-    height: 400px;
-    width: 250px;
-    margin: 20px 30% 60px 41.5%;
+    margin: 0px auto; /* Center horizontally with auto margins */
+    width: 250px; /* Ensure width is set */
+    height: 400px; /* Ensure height is set */
+    background: rgba(0, 0, 0, 0.7); /* Black overlay with 70% opacity */
     border: 2px solid white;
     position: relative;
     border-radius: 20px;
     transition: transform 1s ease;
- cursor: pointer;
- transform-style: preserve-3d;
+    cursor: pointer;
+    transform-style: preserve-3d;
 }
 .card-front{
     z-index: 1;
